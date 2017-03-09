@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as' => 'default.api', 'uses' => 'HomeController@index']);
+Route::get('/dashboard/chart', ['as' => 'dashboard.chart', 'uses' => 'HomeController@getChart']);
+Route::get('instagram', ['as' => 'instagram.index', 'uses' => 'HomeController@instagramPage']);
+// Route::get('/', ['uses']);
