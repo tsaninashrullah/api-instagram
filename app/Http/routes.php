@@ -14,4 +14,6 @@
 Route::get('/', ['as' => 'default.api', 'uses' => 'HomeController@index']);
 Route::get('/dashboard/chart', ['as' => 'dashboard.chart', 'uses' => 'HomeController@getChart']);
 Route::get('instagram', ['as' => 'instagram.index', 'uses' => 'HomeController@instagramPage']);
+Route::get('instagram/image', ['as' => 'instagram.image', 'uses' => 'HomeController@instagramImage']);
+Route::get('instagram/video', ['as' => 'instagram.video', 'uses' => 'HomeController@instagramVideo']);
 // Route::get('/', ['uses']);

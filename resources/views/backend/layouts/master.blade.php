@@ -33,10 +33,15 @@
             <script src="{!! url('https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') !!}"></script>
         <![endif]-->
         @yield('style')
+        <style type="text/css">
+            a {
+                color: #ecf0f1;
+            }
+        </style>
     </head>
 
     <body>
-        <div id="wrapper">
+        <div id="wrapper" style="background-color:#34495e;">
         <!-- its include sidebar on header -->
         @include('backend.layouts.header')
 
